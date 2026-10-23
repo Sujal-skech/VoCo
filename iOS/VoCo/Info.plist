@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App identity -->
+    <key>CFBundleDisplayName</key>
+    <string>VoCo</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.innovus.voco</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- Required: Speech Recognition -->
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>VoCo uses speech recognition so you can navigate and learn entirely by voice, without touching the screen.</string>
+
+    <!-- Required: Microphone -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>VoCo needs microphone access to listen for your commands and analyse your vocal health in real time.</string>
+
+    <!-- Required: Face ID -->
+    <key>NSFaceIDUsageDescription</key>
+    <string>VoCo uses Face ID for fast, secure, zero-touch authentication.</string>
+
+    <!-- Background audio for continuous TTS -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>audio</string>
+    </array>
+
+    <!-- Accessibility: support VoiceOver -->
+    <key>UIAccessibilityVoiceOverCompatibility</key>
+    <true/>
+
+    <!-- Supported orientations -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+    </array>
+
+    <!-- Siri / NLP entitlement hint -->
+    <key>INSiriAuthorizationDescription</key>
+    <string>Allows VoCo to be launched and controlled via Siri Shortcuts.</string>
+</dict>
+</plist>
